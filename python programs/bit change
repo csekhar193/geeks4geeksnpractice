@@ -1,0 +1,15 @@
+t=input()
+for i in range(0,t):
+    a=input()
+    x="{0:b}".format(a)
+    b=str(x)
+    c='0'
+    for char in c:
+        b = b.replace(char,"1")
+    y=int(b,2)
+    z=y-a
+    l=[]
+    l.append(z)
+    l.append(y)
+    print(" ".join(map(str,l)))
+    
